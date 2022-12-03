@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Ma veasna Bio </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="./images/bg01.jpg" as="image" />
+    <link href="./index.css" rel="stylesheet">
+    <link rel="preload" href="./images/bg01.jpg" as="image" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      VANTA.BIRDS({
+        el: "#vanta",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundAlpha: 0.0,
+        color2: 0xff00f0,
+        wingSpan: 40.00,
+        separation: 100.00,
+        alignment: 77.00,
+        cohesion: 5.00,
+        quantity: 1.00
+      })
+
+      setTimeout(() => {
+        const main = document.querySelector('main')
+        main.style.opacity = 1
+        main.style.filter = 'blur(0px)'
+      }, 1000)
+    })
+    </script>
+  </head>
+  <body>
+    <div id="vanta"></div>   
+    <main class="animated">
+      <header>
+        <img src="./images/veasna.jpg"  alt="">
+        <h1>@Veasna</h1>
+      </header>
+      <ul>
+        <li>
+          <a href="https://instagram.com/ma.veaana">
+            <img src="./images/instagram.svg" alt="Facebook" width="20px">
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCR7io5nW_8uio7d-nNpa0qg">
+            <img src="./images/youtube.svg" alt="Youtube" width="20px">
+            Youtube
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/PathLife1">
+            <img src="./images/twitter.svg" alt="Twitter" width="20px">
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/veasnama">
+            <img src="./images/github.svg" alt="Github" width="20px">
+            Github
+          </a>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
